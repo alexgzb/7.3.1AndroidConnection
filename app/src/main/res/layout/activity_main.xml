@@ -12,5 +12,45 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textView_connection_header"
+        android:textSize="22sp"
+        android:text="Internet connection status" />
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="invisible"
+        android:id="@+id/imageView_connection_image_offline"
+        android:layout_centerVertical="true"
+        android:src="@android:drawable/presence_offline"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="invisible"
+        android:id="@+id/imageView_connection_image_online"
+        android:layout_centerVertical="true"
+        android:src="@android:drawable/presence_online"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/textView_connection_status"
+        android:layout_below="@id/imageView_connection_image_offline"
+        android:textSize="22sp"
+        android:text="Connection Status" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/button_refresh"
+        android:src="@android:drawable/stat_notify_sync"
+        android:layout_below="@id/textView_connection_status"/>
+
 </RelativeLayout>
